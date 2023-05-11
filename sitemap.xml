@@ -2,9 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://patrick-orz.github.io/links/index.html</loc>
+    
+    <lastmod>2023-05-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://patrick-orz.github.io/about/index.html</loc>
+    
+    <lastmod>2023-05-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://patrick-orz.github.io/posts/20230505-hello_world.html</loc>
     
-    <lastmod>2023-05-10</lastmod>
+    <lastmod>2023-05-11</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -23,24 +41,6 @@
     <loc>https://patrick-orz.github.io/tags/index.html</loc>
     
     <lastmod>2023-05-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://patrick-orz.github.io/about/index.html</loc>
-    
-    <lastmod>2023-05-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://patrick-orz.github.io/links/index.html</loc>
-    
-    <lastmod>2023-05-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
