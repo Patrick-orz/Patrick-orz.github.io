@@ -1,1 +1,7 @@
-https://patrick-orz.github.io/sitemap.xml
+https://patrick-orz.github.io/posts/20230505-hello_world.html
+https://patrick-orz.github.io/archives/index.html
+https://patrick-orz.github.io/tags/index.html
+https://patrick-orz.github.io/about/index.html
+https://patrick-orz.github.io/links/index.html
+https://patrick-orz.github.io/
+https://patrick-orz.github.io/tags/%E9%9A%8F%E7%AC%94/
