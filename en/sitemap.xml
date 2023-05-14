@@ -2,9 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://patrick-orz.github.io/en/posts/20230505-hello_world.html</loc>
+    
+    <lastmod>2023-05-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://patrick-orz.github.io/en/links/index.html</loc>
     
-    <lastmod>2023-05-11</lastmod>
+    <lastmod>2023-05-14</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,16 +22,7 @@
   <url>
     <loc>https://patrick-orz.github.io/en/about/index.html</loc>
     
-    <lastmod>2023-05-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://patrick-orz.github.io/en/posts/20230505-hello_world.html</loc>
-    
-    <lastmod>2023-05-11</lastmod>
+    <lastmod>2023-05-14</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,15 +49,15 @@
 
   <url>
     <loc>https://patrick-orz.github.io/en</loc>
-    <lastmod>2023-05-12</lastmod>
+    <lastmod>2023-05-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://patrick-orz.github.io/en/tags/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2023-05-12</lastmod>
+    <loc>https://patrick-orz.github.io/en/tags/Jots/</loc>
+    <lastmod>2023-05-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
