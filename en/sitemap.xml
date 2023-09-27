@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://patrick-orz.github.io/en/posts/20230920-diamond-quotes.html</loc>
+    
+    <lastmod>2023-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://patrick-orz.github.io/en/posts/20230613-2023-y9-reflection.html</loc>
     
     <lastmod>2023-07-16</lastmod>
@@ -58,7 +67,7 @@
 
   <url>
     <loc>https://patrick-orz.github.io/en</loc>
-    <lastmod>2023-09-16</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -66,14 +75,28 @@
   
   <url>
     <loc>https://patrick-orz.github.io/en/tags/Jots/</loc>
-    <lastmod>2023-09-16</lastmod>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://patrick-orz.github.io/en/tags/Wrap-Up/</loc>
-    <lastmod>2023-09-16</lastmod>
+    <lastmod>2023-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://patrick-orz.github.io/en/tags/Quotes/</loc>
+    <lastmod>2023-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://patrick-orz.github.io/en/tags/Meme/</loc>
+    <lastmod>2023-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
