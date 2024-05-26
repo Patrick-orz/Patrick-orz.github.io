@@ -1,9 +1,0 @@
-.anchor::before{
-	display: block;
-	content: " ";
-	margin-top: -75px;
-	height: 75px;
-	visibility: hidden;
-}
-/*对于目录跳转问题的暂解，以后看要不要改掉*/
-/*问题：跳转后anchor被navbar遮住*/
