@@ -3,7 +3,7 @@
 <html lang="en,default">
 <head>
     <meta charset="utf-8" />
-    <title>tags | PatrickのNest</title>
+    <title>Major Blog Update | PatrickのNest</title>
     <meta name="author" content="Patrick-orz" />
     <meta name="description" content="" />
     <meta name="keywords" content="Patrick,Blog,博客,Pa7rick,Pat,Pa7" />
@@ -43,6 +43,14 @@
 
 <script src="/en/js/lib/preview.js"></script>
 
+
+
+
+
+
+<script src="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline.min.css" />
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline-meta.min.css" />
 
 
 
@@ -169,45 +177,141 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="archives">
-    
-    <div class="categories-tags">
-        
-        
-        
-        <span>
-            <a href="/en/tags/Meme/" style="background: #03a9f4">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                Meme
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/en/tags/2023-Summer/" style="background: #ffa2c4">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                2023 Summer
-            </a>
-        </span>
-        
-        
-        
-        <span>
-            <a href="/en/tags/Blog/" style="background: #ff7d73">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                Blog
-            </a>
-        </span>
-        
-        
+            <div class="article">
+    <div>
+        <h1>Major Blog Update</h1>
     </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/5/28
+        </span>
+        <span class="updated">
+            <span class="icon">
+                <i class="fa-solid fa-pen-to-square"></i>
+                Last updated by
+                2024/5/28
+            </span>
+        </span>
+        
+        <span class="category">
+            <a href="/en/categories/Announcements/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                Announcements
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/en/tags/Blog/" style="color: #03a9f4">
+                    Blog
+                </a>
+            </span>
+            
+        </span>
+        
+        <span class="views">
+            <span class="icon">
+                <i class="fa-solid fa-eye"></i>
+            </span>
+
+            <span class="waline-pageview-count"></span>
+        </span>
+    </div>
+    
+    <div class="content" v-pre>
+        <link rel="stylesheet" type="text&#x2F;css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"><p><img src="/en/posts/20240528-major-blog-update/main.png" alt="Header Image" title="Major Blog Update"></p>
+<p><strong>Blue Lake from Hollow Knight</strong></p>
+<hr>
+<h1 id="Status"><a href="#Status" class="headerlink" title="Status"></a>Status</h1><p>It’s been quite a while since I last checked up on my blog. I went online a while ago and realized the domain I was hosting my comment section on needs renewal.
+Some local source files are also somehow corrupted, and I can’t launch the blog locally. </p>
+<p>Seeing how everything is falling apart, I might as well implement some big updates.</p>
+<h1 id="Changes"><a href="#Changes" class="headerlink" title="Changes"></a>Changes</h1><p>The biggest change is on the switch of theme, from <a target="_blank" rel="noopener" href="https://github.com/Lhcfl/hexo-theme-anatolo">Anatolo</a> to <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX</a>. I handwrote some more features, such as home page thumbnails, view counts, and last updated time. I considered using <a target="_blank" rel="noopener" href="https://github.com/miiiku/hexo-theme-flexblock">Flexblock</a> along the way, but since a lot of the features I wanted has been added myself, I didn’t bother switching again.</p>
+<p>I am currently using Vercel to deploy my comment section, meaning that it still functions. 
+The only issue is that access within China is a lot harder, as Vercel is somehow blocked off there. 
+This is also why I bought a custom domain for hosting in the first place.</p>
+<p>Due to the big theme switch, some older posts would have formatting and tag updates as well.</p>
+<p>All specific changes:</p>
+<p><strong>NEW</strong></p>
+<ul>
+<li>Brand new theme<ul>
+<li>Random home page background image<ul>
+<li>Probably going to be more options in the future</li>
+</ul>
+</li>
+<li>Handwritten post thumbnail function</li>
+</ul>
+</li>
+<li>Old posts<ul>
+<li>Replace a majority of <code>html</code> with <code>md</code><ul>
+<li>I don’t know why I bothered, there’s literally no difference</li>
+</ul>
+</li>
+<li>Removed several <code>&lt;hr&gt;</code> due to the change of style</li>
+<li>Optimized tags and categories organization system<ul>
+<li><em>Should be an optimization?</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Version control &amp; open source<ul>
+<li>Open sourced my own fork of the ParticleX theme<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Patrick-orz/hexo-theme-particlex">Patrick-orz&#x2F;hexo-theme-particlex</a><ul>
+<li>The way I accomplished English and Mandarin support is through making to copies of the same blog, just in different languages. The <code>main</code> branch in the linked repo contains the mandarin version, while the <code>en</code> branch contains the english version.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Backed other hexo source code to Github<ul>
+<li>Private (there’s sensitive content)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>REMOVED</strong></p>
+<ul>
+<li><em>Temporarily</em> removed <strong>toc</strong><ul>
+<li>The new theme didn’t come with this feature, I might try to implement it myself later</li>
+</ul>
+</li>
+<li>Custom domain comment section<ul>
+<li>The comment secion is still here, it’s just that access is unstable in China<ul>
+<li>100 bucks a year is just a bit expensive</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>FUTURE (consider adding)</strong></p>
+<ul>
+<li>Light dark theme toggle</li>
+<li><strong>toc</strong></li>
+</ul>
+<p>That’s all!</p>
+
+    </div>
+    
+    
+    
+    
+    
+    <div id="comment">
+        <div id="waline-container"></div>
+    </div>
+    
+    
     
 </div>
 
@@ -239,6 +343,29 @@
         
     </div>
     <script src="/en/js/main.js"></script>
+    
+    
+
+
+<script>
+    Waline.init({
+        el: "#waline-container",
+        serverURL: "https://waline-patrick-orz.vercel.app/",
+        commentCount: true,
+        pageview: true,
+        emoji: "https://unpkg.com/@waline/emojis@1.2.0/weibo,https://unpkg.com/@waline/emojis@1.2.0/alus,https://unpkg.com/@waline/emojis@1.2.0/bilibili,https://unpkg.com/@waline/emojis@1.2.0/qq,https://unpkg.com/@waline/emojis@1.2.0/tieba,https://unpkg.com/@waline/emojis@1.2.0/tw-emoji".split(","),
+        meta: "nick,mail,link".split(","),
+        requiredMeta: "nick".split(","),
+        lang: "",
+        wordLimit: 0,
+        pageSize: "10",
+        login: "enable",
+        
+    });
+</script>
+
+
+
     
 </body>
 </html>

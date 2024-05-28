@@ -192,7 +192,7 @@
             <span class="icon">
                 <i class="fa-solid fa-pen-to-square"></i>
                 最后更新于
-                2024/5/24
+                2024/5/28
             </span>
         </span>
         
@@ -214,7 +214,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #00a596">
+                <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #03a9f4">
                     博客
                 </a>
             </span>
@@ -236,9 +236,9 @@
 <hr>
 <h1 id="现状"><a href="#现状" class="headerlink" title="现状"></a>现状</h1><p>好久没有更新博客了，上线一看发现用来部署评论区的域名过期了。博客本地文件也不知道出了什么毛病，本地部署不了。看出了这么多问题，是进行大更新的好机会。</p>
 <h1 id="改动"><a href="#改动" class="headerlink" title="改动"></a>改动</h1><p>最大的改动便是换了一个主题，从<a target="_blank" rel="noopener" href="https://github.com/Lhcfl/hexo-theme-anatolo">Anatolo</a>改成了<a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX</a>。自己手写了一些功能，比如封面设置，浏览量和上次更新时间。有考虑过<a target="_blank" rel="noopener" href="https://github.com/miiiku/hexo-theme-flexblock">Flexblock</a>，但是手写了一些功能后还是觉得没必要。</p>
-<p>评论区我暂时用Gituhub Pages部署了，起码能用，只是国内访问就会困难许多（GP在国内被墙了）。这也是我一开始用了自购域名的原因。</p>
+<p>评论区我暂时用Vercel部署了，起码能用，只是国内访问就会困难许多（Vercel在国内被墙了）。这也是我一开始用了自购域名的原因。</p>
 <p>因为主题大换，我也会对旧文章的排版标签等做出修改。</p>
-<p>所有改动都罗列在下方了：</p>
+<p>所有具体改动都罗列在下方了：</p>
 <p><strong>新增</strong></p>
 <ul>
 <li>船新主题<ul>
@@ -250,8 +250,8 @@
 </ul>
 </li>
 <li>旧文章<ul>
-<li>将md中的大部分html替换（以前似乎是为了让上个主题的toc运作，我热衷于往md里塞html）<ul>
-<li>改的差不多的时候发现自己真是闲的蛋疼，html又不影响预览，文章好好的没问题改他干什么</li>
+<li>将<code>md</code>中的大部分<code>html</code>替换（以前似乎是为了让上个主题的toc运作，我热衷于往<code>md</code>里塞<code>html</code>）<ul>
+<li>改的差不多的时候发现自己真是闲的蛋疼，<code>html</code>又不影响预览，文章好好的没问题改他干什么</li>
 </ul>
 </li>
 <li>移除了许多横线</li>
@@ -263,8 +263,10 @@
 </li>
 <li>版本控制&amp;开源<ul>
 <li>开源了我自己修改过的ParticleX主题<ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/Patrick-orz/hexo-theme-particlex-zh-cn">zh-cn</a></li>
-<li>我用来实现中英的方法可能有点笨，就是做两份大致一样的博客，一中一英。以上一个网址是中文的主题，一个是英文。</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Patrick-orz/hexo-theme-particlex">Patrick-orz&#x2F;hexo-theme-particlex</a><ul>
+<li>我用来实现中英的方法可能有点笨，就是做两份大致一样的博客，一中一英。<code>main</code> branch里的是中文版，<code>en</code> branch里的是英文。</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>将其他hexo源代码存放到了Github<ul>
@@ -281,8 +283,8 @@
 </ul>
 </li>
 <li>独立域名评论区<ul>
-<li>并不是评论区移除了，只是国内因为域名在GP上不太好访问罢了<ul>
-<li>一年50刀域名有点小贵</li>
+<li>并不是评论区移除了，只是国内因为域名在Vercel上不太好访问罢了<ul>
+<li>一年100刀域名有点小贵</li>
 </ul>
 </li>
 </ul>
