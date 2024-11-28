@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://patrick-orz.github.io/tags/index.html</loc>
-    
-    <lastmod>2024-11-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://patrick-orz.github.io/links/index.html</loc>
     
     <lastmod>2024-11-28</lastmod>
@@ -20,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://patrick-orz.github.io/archives/index.html</loc>
+    <loc>https://patrick-orz.github.io/tags/index.html</loc>
     
     <lastmod>2024-11-28</lastmod>
     
@@ -30,6 +21,15 @@
   
   <url>
     <loc>https://patrick-orz.github.io/categories/index.html</loc>
+    
+    <lastmod>2024-11-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://patrick-orz.github.io/archives/index.html</loc>
     
     <lastmod>2024-11-28</lastmod>
     
@@ -142,27 +142,6 @@
   </url>
   
   <url>
-    <loc>https://patrick-orz.github.io/tags/OI/</loc>
-    <lastmod>2024-11-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://patrick-orz.github.io/tags/%E7%AB%9E%E8%B5%9B/</loc>
-    <lastmod>2024-11-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://patrick-orz.github.io/tags/USACO/</loc>
-    <lastmod>2024-11-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://patrick-orz.github.io/tags/%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2024-11-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -185,6 +164,27 @@
   
   <url>
     <loc>https://patrick-orz.github.io/tags/%E5%89%A7%E6%83%85%E7%B1%BB/</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://patrick-orz.github.io/tags/OI/</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://patrick-orz.github.io/tags/%E7%AB%9E%E8%B5%9B/</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://patrick-orz.github.io/tags/USACO/</loc>
     <lastmod>2024-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
