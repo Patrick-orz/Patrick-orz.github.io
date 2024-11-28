@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn,default">
+<head>
+    <meta charset="utf-8" />
+    <title>9金无伤技巧合集【更新中】 | Patrickの小窝</title>
+    <meta name="author" content="Patrick-orz" />
+    <meta name="description" content="Welcome! ヾ(≧O≦)〃" />
+    <meta name="keywords" content="Patrick,Blog,博客,Pa7rick,Pat,Pa7" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="icon" href="/images/avatar.jpg" />
+    <link rel="preconnect" href="https://s4.zstatic.net" />
+<script src="https://s4.zstatic.net/ajax/libs/vue/3.3.7/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.cn" />
+<link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin />
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.cn/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap"
+/>
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=default"></script>
+
+
+<script src="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://s4.zstatic.net/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+<script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.css" />
+<script src="/js/lib/math.js"></script>
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+<script src="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline.min.css" />
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline-meta.min.css" />
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
+<meta name="generator" content="Hexo 7.2.0"></head>
+<body>
+    <div id="layout">
+        <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <p>加载过慢请开启缓存 浏览器默认开启</p>
+                    <img src="/images/loading.gif" />
+                </div>
+            </div>
+        </transition>
+        <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/">
+            <span>PATRICKの小窝</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;主页</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;关于</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;归档</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;分类</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;标签</span>
+        </a>
+        
+        <a href="/en">
+            <i class="fa-solid fa-globe fa-fw"></i>
+            <span>&ensp;English</span>
+        </a>
+        
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;PATRICKの小窝</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">主页</div>
+                    </div>
+                </a>
+                
+                <a href="/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">关于</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">归档</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">分类</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">标签</div>
+                    </div>
+                </a>
+                
+                <a href="/en">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-globe fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">English</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+        <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            <div class="article">
+    <div>
+        <h1>9金无伤技巧合集【更新中】</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/10/18
+        </span>
+        <span class="updated">
+            <span class="icon">
+                <i class="fa-solid fa-pen-to-square"></i>
+                最后更新于
+                2024/5/29
+            </span>
+        </span>
+        
+        <span class="category">
+            <a href="/categories/%E6%94%BB%E7%95%A5/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                攻略
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/%E6%B8%B8%E6%88%8F/" style="color: #03a9f4">
+                    游戏
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/%E8%94%9A%E8%93%9D/" style="color: #00a596">
+                    蔚蓝
+                </a>
+            </span>
+            
+        </span>
+        
+        <span class="views">
+            <span class="icon">
+                <i class="fa-solid fa-eye"></i>
+            </span>
+
+            <span class="waline-pageview-count"></span>
+        </span>
+    </div>
+    
+    <div class="content" v-pre>
+        <link rel="stylesheet" type="text&#x2F;css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"><p><img src="/main.jpeg" alt="Header Image" title="9金技巧"></p>
+<p><em>房间名都来自于<a target="_blank" rel="noopener" href="https://berrycamp.github.io/celeste/farewell/a">BerryCamp</a></em></p>
+<hr class="little-margin">
+
+<h1 id = "Chapter-1" class = "anchor" style = "color: #e8bcf0">Start (CP1)</h1>
+
+<h1 id = "Chapter-2" class = "anchor" style = "color: #da8ee7">Singular (CP2)</h1>
+
+<ul>
+<li><a target="_blank" rel="noopener" href="https://discord.com/channels/403698615446536203/946912583716319332/1140282472991572038">Hyper稳定前期鱼弹「SI-9」</a></li>
+</ul>
+<h1 id = "Chapter-3" class = "anchor" style = "color: #ca5cdd">Power Source (CP3)</h1>
+
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1wB4y1V7JF/?t=05m49s">Keyskip</a></li>
+</ul>
+<h1 id = "Chapter-4" class = "anchor" style = "color: #be2ed6">Remembered (CP4)</h1>
+
+<ul>
+<li><a target="_blank" rel="noopener" href="https://discord.com/channels/403698615446536203/947252993651253300/1029619904418156584">坠落弹簧柱子偷水母法「RM-4」</a></li>
+</ul>
+<h1 id = "Chapter-5" class = "anchor" style = "color: #b100cd">Event Horizon (CP5)</h1>
+
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1wB4y1V7JF/?t=14m05s">传送带&#x2F;蹭墙偷冲刺法「EH-7」</a></li>
+<li><a target="_blank" rel="noopener" href="https://discord.com/channels/403698615446536203/1137925456562245684/1137925465072480307">带刺kevin拿钥匙只踩两次「EH-8」</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1wB4y1V7JF/?t=18m15s">果冻房「EH-14」</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1bG411M738/?t=3h05m40s">果冻房 Rick setup「EH-14」</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1bG411M738/?t=3h05m55s">移动果冻房 Rick setup「EH-15」</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1bG411M738/?t=3h06m05s">comb. Rick setup「EH-16」</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1wB4y1V7JF/?t=20m35s">刺云面安全无冲「EH-17」</a></li>
+</ul>
+<h1 id = "Chapter-6" class = "anchor" style = "color: #a000c8">Determination (CP6)</h1>
+
+<ul>
+<li><a target="_blank" rel="noopener" href="https://discord.com/channels/403698615446536203/1137925511536971796/1137925519900409896">上升弹簧下冲timing法「DT-3」</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1dd4y1B7Rh/?t=0m40s">上升弹簧蹭墙&#x2F;目押timing法「DT-3」</a></li>
+<li><a target="_blank" rel="noopener" href="https://discord.com/channels/403698615446536203/1137925524774195260/1137925530453286922">泡泡接Wavedash「DT-4」</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1dd4y1B7Rh/?t=1m35s">泡泡接右下冲「DT-4」</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1dd4y1B7Rh/?t=3m35s">移动海星切板速降法「DT-7」</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1wY4y1s7dE/?spm_id_from=333.337.search-card.all.click&vd_source=acb28134aca7db535ac1109a21921cc8">Super对准法「DT-9」</a></li>
+<li><a target="_blank" rel="noopener" href="https://discord.com/channels/403698615446536203/1137925545993195560/1137925551068299396">弹簧接羽毛「DT-10」</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1dd4y1B7Rh/?t=6m05s">冰火房间参考路线「DT-11」</a></li>
+<li><a target="_blank" rel="noopener" href="https://discord.com/channels/403698615446536203/1137925561910562826/1137925571154804866">Hyper兔子左上冲强风弹簧「DT-12」</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1dd4y1B7Rh/?t=6m55s">Hyper向上强风弹簧「DT-12」</a></li>
+<li><a target="_blank" rel="noopener" href="https://discord.com/channels/403698615446536203/946912583716319332/1048450127427276930">长羽毛面Timing辅助「DT-15」</a></li>
+</ul>
+<h1 id = "Chapter-7" class = "anchor" style = "color: #8a00c2">Stubbornness (CP7)</h1>
+
+<h1 id = "Chapter-8" class = "anchor" style = "color: #7600bc">Reconciliation (CP8)</h1>
+
+<ul>
+<li><a target="_blank" rel="noopener" href="https://discord.com/channels/403698615446536203/946912583716319332/1141992066885357588">踩刺cb解最终节奏面「RC-1」</a></li>
+</ul>
+<h1 id = "Chapter-9" class = "anchor" style = "color: #4c00b0">Farewell (CP9)</h1>
+
+<ul>
+<li><a target="_blank" rel="noopener" href="https://discord.com/channels/403698615446536203/946912583716319332/1063928237408915537">骚操作</a></li>
+</ul>
+<h1 id = "All" class = "anchor">B站全流程</h1>
+
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1wB4y1V7JF/?spm_id_from=333.788&vd_source=acb28134aca7db535ac1109a21921cc8">Up: Pachimarain</a></p>
+<p><em>dc内还有许多别的strat，但是因为我本身那面就比较稳定或者因为setup不够好所以没有记录。</em></p>
+
+    </div>
+    
+    
+    
+    
+    
+    <div id="comment">
+        <div id="waline-container"></div>
+    </div>
+    
+    
+    
+</div>
+
+            <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2023 - 2024 Patrickの小窝
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;Patrick-orz
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+        
+        <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
+            </div>
+        </transition>
+        
+    </div>
+    <script src="/js/main.js"></script>
+    
+    
+
+
+<script>
+    Waline.init({
+        el: "#waline-container",
+        serverURL: "https://waline-patrick-orz.vercel.app/",
+        commentCount: true,
+        pageview: true,
+        emoji: "https://unpkg.com/@waline/emojis@1.2.0/weibo,https://unpkg.com/@waline/emojis@1.2.0/alus,https://unpkg.com/@waline/emojis@1.2.0/bilibili,https://unpkg.com/@waline/emojis@1.2.0/qq,https://unpkg.com/@waline/emojis@1.2.0/tieba,https://unpkg.com/@waline/emojis@1.2.0/tw-emoji".split(","),
+        meta: "nick,mail,link".split(","),
+        requiredMeta: "nick".split(","),
+        lang: "",
+        wordLimit: 0,
+        pageSize: "10",
+        login: "enable",
+        
+        locale: {"nick":"昵称","nickError":"昵称不能少于3个字符","mail":"邮箱","mailError":"请填写正确的邮件地址","link":"网址","optional":"可选","placeholder":"欢迎评论","sofa":"来发评论吧~","submit":"提交","like":"喜欢","cancelLike":"取消喜欢","reply":"回复","cancelReply":"取消回复","comment":"评论","refresh":"刷新","more":"加载更多...","preview":"预览","emoji":"表情","uploadImage":"上传图片","seconds":"秒前","minutes":"分钟前","hours":"小时前","days":"天前","now":"刚刚","uploading":"正在上传","login":"登录","logout":"退出","admin":"博主","sticky":"置顶","word":"字","wordHint":"评论字数应在 $0 到 $1 字之间！\\n当前字数：$2","anonymous":"匿名","level0":"潜水","level1":"冒泡","level2":"吐槽","level3":"活跃","level4":"话痨","level5":"传说","gif":"表情包","gifSearchPlaceholder":"搜索表情包","profile":"个人资料","approved":"通过","waiting":"待审核","spam":"垃圾","unsticky":"取消置顶","oldest":"按倒序","latest":"按正序","hottest":"按热度","reactionTitle":"你认为这篇文章怎么样？"},
+        
+    });
+</script>
+
+
+
+    
+</body>
+</html>
