@@ -193,7 +193,7 @@
             <span class="icon">
                 <i class="fa-solid fa-pen-to-square"></i>
                 最后更新于
-                2024/5/28
+                2024/12/1
             </span>
         </span>
         
@@ -215,7 +215,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #ff7d73">
+                <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #ffa2c4">
                     博客
                 </a>
             </span>
@@ -235,26 +235,29 @@
         
     <div id="toc">
         <h1 class="toc-toggler" onclick="toggleToc()">目录 <span class="arrow">&#9654;</span></h1>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%8E%B0%E7%8A%B6"><span class="toc-number">1.</span> <span class="toc-text">现状</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%94%B9%E5%8A%A8"><span class="toc-number">2.</span> <span class="toc-text">改动</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E5%9B%A0"><span class="toc-number">1.</span> <span class="toc-text">前因</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%94%B9%E5%8A%A8"><span class="toc-number">2.</span> <span class="toc-text">改动</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%A2%9E"><span class="toc-number">2.1.</span> <span class="toc-text">新增</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A7%BB%E9%99%A4"><span class="toc-number">2.2.</span> <span class="toc-text">移除</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AA%E6%9D%A5%EF%BC%88%E5%8F%AF%E8%83%BD%E4%BC%9A%E8%80%83%E8%99%91%E6%B7%BB%E5%8A%A0%EF%BC%89"><span class="toc-number">2.3.</span> <span class="toc-text">未来（可能会考虑添加）</span></a></li></ol></li></ol>
     </div>
 
 
         <link rel="stylesheet" type="text&#x2F;css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"><p><img src="/posts/20240524-major-blog-update/main.png" alt="Header Image" title="博客大更新"></p>
 <p><em>空洞骑士蓝湖</em></p>
 <hr>
-<h1 id="现状"><a href="#现状" class="headerlink" title="现状"></a>现状</h1><p>好久没有更新博客了，上线一看发现用来部署评论区的域名过期了。博客本地文件也不知道出了什么毛病，本地部署不了。看出了这么多问题，是进行大更新的好机会。</p>
+<h1 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h1><p>好久没有更新博客了，上线一看发现用来部署评论区的域名过期了。博客本地文件也不知道出了什么毛病，本地部署不了。看出了这么多问题，是进行大更新的好机会。</p>
 <h1 id="改动"><a href="#改动" class="headerlink" title="改动"></a>改动</h1><p>最大的改动便是换了一个主题，从<a target="_blank" rel="noopener" href="https://github.com/Lhcfl/hexo-theme-anatolo">Anatolo</a>改成了<a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX</a>。自己手写了一些功能，比如封面设置，浏览量和上次更新时间。有考虑过<a target="_blank" rel="noopener" href="https://github.com/miiiku/hexo-theme-flexblock">Flexblock</a>，但是手写了一些功能后还是觉得没必要。</p>
 <p>评论区我暂时用Vercel部署了，起码能用，只是国内访问就会困难许多（Vercel在国内被墙了）。这也是我一开始用了自购域名的原因。</p>
 <p>因为主题大换，我也会对旧文章的排版标签等做出修改。</p>
 <p>所有具体改动都罗列在下方了：</p>
-<p><strong>新增</strong></p>
-<ul>
+<h2 id="新增"><a href="#新增" class="headerlink" title="新增"></a>新增</h2><ul>
 <li>船新主题<ul>
 <li>主页随机背景图<ul>
 <li>未来大概率会加更多图</li>
 </ul>
 </li>
 <li>手写的文章封面功能</li>
+<li>手写&#x2F;改的目录&#x2F;toc功能（2024-12-01)<ul>
+<li>“丰富”的动画…</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>旧文章<ul>
@@ -284,10 +287,9 @@
 </ul>
 </li>
 </ul>
-<p><strong>移除</strong></p>
-<ul>
-<li><em>暂时</em>移除toc<ul>
-<li>主题没自带这个功能，以后很有可能会自己尝试实现</li>
+<h2 id="移除"><a href="#移除" class="headerlink" title="移除"></a>移除</h2><ul>
+<li><del><em>暂时</em>移除toc</del><ul>
+<li><del>主题没自带这个功能，以后很有可能会自己尝试实现</del></li>
 </ul>
 </li>
 <li>独立域名评论区<ul>
@@ -298,10 +300,9 @@
 </ul>
 </li>
 </ul>
-<p><strong>未来（可能会考虑添加）</strong></p>
-<ul>
+<h2 id="未来（可能会考虑添加）"><a href="#未来（可能会考虑添加）" class="headerlink" title="未来（可能会考虑添加）"></a>未来（可能会考虑添加）</h2><ul>
 <li>黑白主题切换</li>
-<li>toc</li>
+<li><del>toc</del>（已完成）</li>
 </ul>
 <p>我一开始写这篇文的时候上面的列表还是空的，不过等发布的时候博客应该就很完善了。</p>
 <p>不知不觉博客已经做了一年了，一些大系列应该很快会迎来更新（蔚蓝…）。学年总结也快来了！</p>
