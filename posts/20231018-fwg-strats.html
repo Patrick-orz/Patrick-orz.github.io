@@ -55,6 +55,9 @@
 
 
 
+
+<script src="/js/lib/scrollTop.js"></script>
+
 <script src="/js/lib/toc.js"></script>
 <link rel="stylesheet" href="/css/main.css" />
 
@@ -178,7 +181,13 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div class="article">
+            
+    <div onclick="scrollToTop()" id="scrollTop-container" class="">
+        <i class="fa-solid fa-circle-chevron-up fa-3x"></i>
+    </div>
+
+
+<div class="article">
     <div>
         <h1>9金无伤技巧合集【更新中】</h1>
     </div>
@@ -215,14 +224,14 @@
             
             <span class="tag">
                 
-                <a href="/tags/%E6%B8%B8%E6%88%8F/" style="color: #00a596">
+                <a href="/tags/%E6%B8%B8%E6%88%8F/" style="color: #ffa2c4">
                     游戏
                 </a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/%E8%94%9A%E8%93%9D/" style="color: #ffa2c4">
+                <a href="/tags/%E8%94%9A%E8%93%9D/" style="color: #00a596">
                     蔚蓝
                 </a>
             </span>
@@ -241,7 +250,7 @@
     <div class="content" v-pre>
         
     <div id="toc">
-        <h1 class="toc-toggler" onclick="toggleToc()">目录 <span class="arrow">&#9654;</span></h1>
+        <h1 class="toc-toggler" onclick="toggleToc()">目录<i class="fa-solid fa-caret-up toc-arrow"></i></h1>
         <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Chapter-1"><span class="toc-number">1.</span> <span class="toc-text">Start (CP1)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Chapter-2"><span class="toc-number">2.</span> <span class="toc-text">Singular (CP2)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Chapter-3"><span class="toc-number">3.</span> <span class="toc-text">Power Source (CP3)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Chapter-4"><span class="toc-number">4.</span> <span class="toc-text">Remembered (CP4)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Chapter-5"><span class="toc-number">5.</span> <span class="toc-text">Event Horizon (CP5)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Chapter-6"><span class="toc-number">6.</span> <span class="toc-text">Determination (CP6)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Chapter-7"><span class="toc-number">7.</span> <span class="toc-text">Stubbornness (CP7)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Chapter-8"><span class="toc-number">8.</span> <span class="toc-text">Reconciliation (CP8)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Chapter-9"><span class="toc-number">9.</span> <span class="toc-text">Farewell (CP9)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#All"><span class="toc-number">10.</span> <span class="toc-text">B站全流程</span></a></li></ol>
     </div>
 

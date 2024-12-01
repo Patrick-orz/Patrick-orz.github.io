@@ -1,3 +1,6 @@
+html {
+ scroll-behavior: smooth;
+}
 #archives {
     margin: auto;
     margin-top: 100px;
@@ -461,16 +464,30 @@
     margin-bottom: 50px;
     z-index: 1000;
 }
-.arrow {
-    display: inline-block;
-    transition: transform 0.3s ease, color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+#scrollTop-container {
+    cursor: pointer;
+    position: fixed;
+    padding: 1.5em;
+    right: 0;
+    bottom: 0;
+
+    transition: opacity 0.3s ease, visibility 0s 0.3s, color 0.2s ease;
 }
-.arrow.show {
-    transform: rotate(90deg) translateX(2px);
+#scrollTop-container:hover {
+    color: darkgrey;
+}
+.toc-arrow {
+    display: inline-block;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease, color 0.2s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+.toc-arrow.show {
+    transform: rotate(180deg);
 }
 .toc-toggler {
+    display: inline-block;
     cursor: pointer;
-    transition: transform 0.3s ease, color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, color 0.2s ease, transform 0.3s ease, opacity 0.3s ease;
 }
 .toc-toggler:hover {
     opacity: 0.7;

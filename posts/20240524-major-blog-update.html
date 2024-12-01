@@ -55,6 +55,9 @@
 
 
 
+
+<script src="/js/lib/scrollTop.js"></script>
+
 <script src="/js/lib/toc.js"></script>
 <link rel="stylesheet" href="/css/main.css" />
 
@@ -178,7 +181,13 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div class="article">
+            
+    <div onclick="scrollToTop()" id="scrollTop-container" class="">
+        <i class="fa-solid fa-circle-chevron-up fa-3x"></i>
+    </div>
+
+
+<div class="article">
     <div>
         <h1>博客大更新</h1>
     </div>
@@ -215,7 +224,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #ffa2c4">
+                <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #ff7d73">
                     博客
                 </a>
             </span>
@@ -234,7 +243,7 @@
     <div class="content" v-pre>
         
     <div id="toc">
-        <h1 class="toc-toggler" onclick="toggleToc()">目录 <span class="arrow">&#9654;</span></h1>
+        <h1 class="toc-toggler" onclick="toggleToc()">目录<i class="fa-solid fa-caret-up toc-arrow"></i></h1>
         <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E5%9B%A0"><span class="toc-number">1.</span> <span class="toc-text">前因</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%94%B9%E5%8A%A8"><span class="toc-number">2.</span> <span class="toc-text">改动</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%A2%9E"><span class="toc-number">2.1.</span> <span class="toc-text">新增</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A7%BB%E9%99%A4"><span class="toc-number">2.2.</span> <span class="toc-text">移除</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AA%E6%9D%A5%EF%BC%88%E5%8F%AF%E8%83%BD%E4%BC%9A%E8%80%83%E8%99%91%E6%B7%BB%E5%8A%A0%EF%BC%89"><span class="toc-number">2.3.</span> <span class="toc-text">未来（可能会考虑添加）</span></a></li></ol></li></ol>
     </div>
 
@@ -256,6 +265,7 @@
 <li>手写的文章封面功能</li>
 <li>手写&#x2F;改的目录&#x2F;toc功能（2024-12-01)<ul>
 <li>“丰富”的动画…</li>
+<li>跳转至页面顶部快捷按钮</li>
 </ul>
 </li>
 </ul>
@@ -288,7 +298,7 @@
 </li>
 </ul>
 <h2 id="移除"><a href="#移除" class="headerlink" title="移除"></a>移除</h2><ul>
-<li><del><em>暂时</em>移除toc</del><ul>
+<li><del><em>暂时</em>移除toc</del>（已重新实现）<ul>
 <li><del>主题没自带这个功能，以后很有可能会自己尝试实现</del></li>
 </ul>
 </li>

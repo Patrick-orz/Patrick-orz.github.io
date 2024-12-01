@@ -55,6 +55,9 @@
 
 
 
+
+<script src="/js/lib/scrollTop.js"></script>
+
 <script src="/js/lib/toc.js"></script>
 <link rel="stylesheet" href="/css/main.css" />
 
@@ -178,7 +181,13 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div class="article">
+            
+    <div onclick="scrollToTop()" id="scrollTop-container" class="">
+        <i class="fa-solid fa-circle-chevron-up fa-3x"></i>
+    </div>
+
+
+<div class="article">
     <div>
         <h1>2023 9年级总结</h1>
     </div>
@@ -215,7 +224,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/2023%E6%9A%91%E5%81%87/" style="color: #ffa2c4">
+                <a href="/tags/2023%E6%9A%91%E5%81%87/" style="color: #00a596">
                     2023暑假
                 </a>
             </span>
@@ -234,7 +243,7 @@
     <div class="content" v-pre>
         
     <div id="toc">
-        <h1 class="toc-toggler" onclick="toggleToc()">目录 <span class="arrow">&#9654;</span></h1>
+        <h1 class="toc-toggler" onclick="toggleToc()">目录<i class="fa-solid fa-caret-up toc-arrow"></i></h1>
         <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E5%B9%B4%E5%8F%88%E8%BF%87%E5%8E%BB%E4%BA%86%E2%80%A6"><span class="toc-number">1.</span> <span class="toc-text">一年又过去了…</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">2.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%A6%E6%A0%A1"><span class="toc-number">3.</span> <span class="toc-text">学校</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%BE%E7%A8%8B"><span class="toc-number">3.1.</span> <span class="toc-text">课程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83"><span class="toc-number">3.2.</span> <span class="toc-text">环境</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%AA%E4%BA%BA"><span class="toc-number">4.</span> <span class="toc-text">个人</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E4%BD%93%E6%84%9F%E5%8F%97"><span class="toc-number">4.1.</span> <span class="toc-text">总体感受</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%BE%E5%A4%96"><span class="toc-number">4.2.</span> <span class="toc-text">课外</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A4%BE%E4%BA%A4"><span class="toc-number">4.3.</span> <span class="toc-text">社交</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B0%BE%E5%A3%B0"><span class="toc-number">5.</span> <span class="toc-text">尾声</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9A%91%E5%81%87%E5%BF%AB%E4%B9%90%EF%BC%81%E7%8E%A9%E7%9A%84%E5%BC%80%E5%BF%83-OwO"><span class="toc-number">5.1.</span> <span class="toc-text">暑假快乐！玩的开心 (OwO)&#x2F;</span></a></li></ol></li></ol>
     </div>
 
