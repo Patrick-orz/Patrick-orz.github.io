@@ -26,10 +26,16 @@ const app = Vue.createApp({
         handleScroll() {
             let wrap = this.$refs.homePostsWrap;
             let newScrollTop = document.documentElement.scrollTop;
-            if (this.scrollTop < newScrollTop) {
+            //if (this.scrollTop < newScrollTop) {
+            //    this.hiddenMenu = true;
+            //    this.showMenuItems = false;
+            //} else this.hiddenMenu = false;
+            if (newScrollTop <= 60) {
+                this.hiddenMenu = false;
+            } else {
                 this.hiddenMenu = true;
                 this.showMenuItems = false;
-            } else this.hiddenMenu = false;
+            }
             if (wrap) {
                 if (newScrollTop <= window.innerHeight - 100) this.menuColor = true;
                 else this.menuColor = false;

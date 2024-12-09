@@ -1,8 +1,8 @@
 https://patrick-orz.github.io/posts/20240524-major-blog-update.html
 https://patrick-orz.github.io/links/index.html
 https://patrick-orz.github.io/tags/index.html
-https://patrick-orz.github.io/categories/index.html
 https://patrick-orz.github.io/archives/index.html
+https://patrick-orz.github.io/categories/index.html
 https://patrick-orz.github.io/posts/20230927-celeste-202.html
 https://patrick-orz.github.io/posts/20231018-fwg-strats.html
 https://patrick-orz.github.io/about/index.html
