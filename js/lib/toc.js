@@ -37,19 +37,18 @@ window.addEventListener("load", () => {
         blurTop = document.querySelector('.blur-top');
         blurBottom = document.querySelector('.blur-bottom');
 
+		// Whether content scrollable
+		if(window.innerHeight - 100 >= content.scrollHeight - 10)
+			contentScrollable = false;
+
 		// init element
 		toggleToc();
         arrow.style.opacity = toggler.style.opacity = 1;
 
-		setTimeout(() => { // Timeout to allow content extension
-			if(content.scrollTop + content.offsetHeight >= content.scrollHeight - 10) // Content unscrollable
-				contentScrollable = false;
-
+		checkBlur();
+		content.addEventListener('scroll', () => {
 			checkBlur();
-			content.addEventListener('scroll', () => {
-				checkBlur();
-			});
-		}, 500);
+		});
 
     }, 500);
 

@@ -20,15 +20,6 @@
   </url>
   
   <url>
-    <loc>https://patrick-orz.github.io/links/index.html</loc>
-    
-    <lastmod>2024-11-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://patrick-orz.github.io/tags/index.html</loc>
     
     <lastmod>2024-11-28</lastmod>
@@ -38,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://patrick-orz.github.io/categories/index.html</loc>
+    <loc>https://patrick-orz.github.io/links/index.html</loc>
     
     <lastmod>2024-11-28</lastmod>
     
@@ -48,6 +39,15 @@
   
   <url>
     <loc>https://patrick-orz.github.io/archives/index.html</loc>
+    
+    <lastmod>2024-11-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://patrick-orz.github.io/categories/index.html</loc>
     
     <lastmod>2024-11-28</lastmod>
     
@@ -137,6 +137,13 @@
 
   
   <url>
+    <loc>https://patrick-orz.github.io/tags/2023%E6%9A%91%E5%81%87/</loc>
+    <lastmod>2024-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://patrick-orz.github.io/tags/OI/</loc>
     <lastmod>2024-12-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -165,13 +172,6 @@
   </url>
   
   <url>
-    <loc>https://patrick-orz.github.io/tags/2023%E6%9A%91%E5%81%87/</loc>
-    <lastmod>2024-12-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://patrick-orz.github.io/tags/2024%E6%9A%91%E5%81%87/</loc>
     <lastmod>2024-12-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -186,7 +186,7 @@
   </url>
   
   <url>
-    <loc>https://patrick-orz.github.io/tags/%E8%94%9A%E8%93%9D/</loc>
+    <loc>https://patrick-orz.github.io/tags/%E5%89%A7%E6%83%85%E7%B1%BB/</loc>
     <lastmod>2024-12-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -200,7 +200,7 @@
   </url>
   
   <url>
-    <loc>https://patrick-orz.github.io/tags/%E5%89%A7%E6%83%85%E7%B1%BB/</loc>
+    <loc>https://patrick-orz.github.io/tags/%E8%94%9A%E8%93%9D/</loc>
     <lastmod>2024-12-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -216,14 +216,14 @@
   </url>
   
   <url>
-    <loc>https://patrick-orz.github.io/categories/%E6%94%BB%E7%95%A5/</loc>
+    <loc>https://patrick-orz.github.io/categories/%E5%85%AC%E5%91%8A/</loc>
     <lastmod>2024-12-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://patrick-orz.github.io/categories/%E5%85%AC%E5%91%8A/</loc>
+    <loc>https://patrick-orz.github.io/categories/%E6%94%BB%E7%95%A5/</loc>
     <lastmod>2024-12-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
