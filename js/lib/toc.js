@@ -36,7 +36,7 @@ window.addEventListener("load", () => {
         blurTop = document.querySelector('.blur-top');
         blurBottom = document.querySelector('.blur-bottom');
 
-        content.style.maxHeight = 700 + 'px';
+        content.style.maxHeight = (window.innerHeight - 100) + 'px';
         content.classList.add('show');
         arrow.classList.add('show');
         arrow.style.opacity = toggler.style.opacity = 1;
@@ -59,7 +59,7 @@ function toggleToc(){
         blurTop.style.opacity = 0;
     } else {
         const contentHeight = content.scrollHeight;
-        content.style.maxHeight = 700 + 'px';
+        content.style.maxHeight = (window.innerHeight - 100) + 'px';
 
         content.classList.add('show');
         arrow.classList.add('show');
