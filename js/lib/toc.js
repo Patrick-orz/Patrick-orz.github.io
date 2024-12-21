@@ -4,30 +4,31 @@ let container;
 let blurTop;
 let blurBottom;
 
+let contentScrollable = true; // Whether the content is scrollable at all
+
 function checkBlur() {
 
-    setTimeout(() => {
-        if (content.scrollTop > 10) {
-            if (content.classList.contains('show')) {
-                blurTop.style.opacity = 1;
-            }
-        } else {
-            blurTop.style.opacity = 0;
-        }
+	if (content.scrollTop > 10) {
+		if (content.classList.contains('show')) {
+			blurTop.style.opacity = 1;
+		}
+	} else {
+		blurTop.style.opacity = 0;
+	}
 
-        if (content.scrollTop + content.clientHeight < content.scrollHeight - 10) {
-            if (content.classList.contains('show')) {
-                blurBottom.style.opacity = 1;
-            }
-        } else {
-            blurBottom.style.opacity = 0;
-        }
-    }, 100);
+	if (content.scrollTop + content.offsetHeight < content.scrollHeight - 10 && contentScrollable) {
+		if (content.classList.contains('show')) {
+			blurBottom.style.opacity = 1;
+		}
+	} else {
+		blurBottom.style.opacity = 0;
+	}
 }
 
 window.addEventListener("load", () => {
 
-    setTimeout(() => {
+    setTimeout(() => { // Timeout to hide element snapping on load
+		// Grab references
         content = document.querySelector('.toc');
         arrow = document.querySelector('.toc-toggler .toc-arrow');
         container = document.querySelector('.toc-container');
@@ -36,16 +37,22 @@ window.addEventListener("load", () => {
         blurTop = document.querySelector('.blur-top');
         blurBottom = document.querySelector('.blur-bottom');
 
-        content.style.maxHeight = (window.innerHeight - 100) + 'px';
-        content.classList.add('show');
-        arrow.classList.add('show');
+		// init element
+		toggleToc();
         arrow.style.opacity = toggler.style.opacity = 1;
 
-        checkBlur();
-        content.addEventListener('scroll', () => {
-            checkBlur();
-        });
+		setTimeout(() => { // Timeout to allow content extension
+			if(content.scrollTop + content.offsetHeight >= content.scrollHeight - 10) // Content unscrollable
+				contentScrollable = false;
+
+			checkBlur();
+			content.addEventListener('scroll', () => {
+				checkBlur();
+			});
+		}, 500);
+
     }, 500);
+
 })
 
 function toggleToc(){
@@ -64,6 +71,6 @@ function toggleToc(){
         content.classList.add('show');
         arrow.classList.add('show');
 
-        checkBlur();
+		checkBlur();
     }
 }

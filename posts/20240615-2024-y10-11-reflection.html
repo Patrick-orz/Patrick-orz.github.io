@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn,default">
+<head>
+    <meta charset="utf-8" />
+    <title>2024 10年级和半11年级总结 | Patrickの小窝</title>
+    <meta name="author" content="Patrick-orz" />
+    <meta name="description" content="Welcome! ヾ(≧O≦)〃" />
+    <meta name="keywords" content="Patrick,Blog,博客,Pa7rick,Pat,Pa7" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="icon" href="/images/avatar.jpg" />
+    <link rel="preconnect" href="https://s4.zstatic.net" />
+<script src="https://s4.zstatic.net/ajax/libs/vue/3.3.7/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.cn" />
+<link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin />
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.cn/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap"
+/>
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=default"></script>
+
+
+<script src="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://s4.zstatic.net/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+<script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.css" />
+<script src="/js/lib/math.js"></script>
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+<script src="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline.min.css" />
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/waline/2.15.8/waline-meta.min.css" />
+
+
+
+
+
+<script src="/js/lib/scrollTop.js"></script>
+
+<script src="/js/lib/toc.js"></script>
+<link rel="stylesheet" href="/css/main.css" />
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+    <div id="layout">
+        <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <p>加载过慢请开启缓存 浏览器默认开启</p>
+                    <img src="/images/loading.gif" />
+                </div>
+            </div>
+        </transition>
+        <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/">
+            <span>PATRICKの小窝</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;主页</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;关于</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;归档</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;分类</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;标签</span>
+        </a>
+        
+        <a href="/en">
+            <i class="fa-solid fa-globe fa-fw"></i>
+            <span>&ensp;English</span>
+        </a>
+        
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;PATRICKの小窝</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">主页</div>
+                    </div>
+                </a>
+                
+                <a href="/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">关于</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">归档</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">分类</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">标签</div>
+                    </div>
+                </a>
+                
+                <a href="/en">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-globe fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">English</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+        <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            
+    <div onclick="scrollToTop()" id="scrollTop-container" class="">
+        <i class="fa-solid fa-circle-chevron-up fa-3x"></i>
+    </div>
+
+
+<div class="article">
+    <div>
+        <h1>2024 10年级和半11年级总结</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/6/15
+        </span>
+        <span class="updated">
+            <span class="icon">
+                <i class="fa-solid fa-pen-to-square"></i>
+                最后更新于
+                2024/12/21
+            </span>
+        </span>
+        
+        <span class="category">
+            <a href="/categories/%E6%80%BB%E7%BB%93/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                总结
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/2024%E6%9A%91%E5%81%87/" style="color: #03a9f4">
+                    2024暑假
+                </a>
+            </span>
+            
+        </span>
+        
+        <span class="views">
+            <span class="icon">
+                <i class="fa-solid fa-eye"></i>
+            </span>
+
+            <span class="waline-pageview-count"></span>
+        </span>
+    </div>
+    
+    
+    <div class="toc-out-container">
+        <div class="toc-container">
+            <strong class="toc-toggler" onclick="toggleToc()">目录<i class="fa-solid fa-caret-up toc-arrow"></i></strong>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80%EF%BC%8810%E5%B9%B4%E7%BA%A7%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">前言（10年级）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%A6%E6%A0%A1%EF%BC%8810%E5%B9%B4%E7%BA%A7%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">学校（10年级）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%BF%E8%88%8D%EF%BC%8810%E5%B9%B4%E7%BA%A7%EF%BC%89"><span class="toc-number">3.1.</span> <span class="toc-text">宿舍（10年级）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%99%E5%AD%A6%EF%BC%8810%E5%B9%B4%E7%BA%A7%EF%BC%89"><span class="toc-number">3.2.</span> <span class="toc-text">教学（10年级）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#10%E5%B9%B4%E7%BA%A7%E5%AD%A6%E4%B8%9A"><span class="toc-number">4.</span> <span class="toc-text">10年级学业</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%8F%E5%89%A7"><span class="toc-number">4.1.</span> <span class="toc-text">戏剧</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#11%E5%B9%B4%E7%BA%A7%E5%AD%A6%E4%B8%9A"><span class="toc-number">5.</span> <span class="toc-text">11年级学业</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HL-%E6%95%B0%E5%AD%A6"><span class="toc-number">5.1.</span> <span class="toc-text">HL 数学</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E8%80%83"><span class="toc-number">5.1.1.</span> <span class="toc-text">第一考</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E8%80%83"><span class="toc-number">5.1.2.</span> <span class="toc-text">第二考</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HL-%E7%89%A9%E7%90%86"><span class="toc-number">5.2.</span> <span class="toc-text">HL 物理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E8%80%83-1"><span class="toc-number">5.2.1.</span> <span class="toc-text">第一考</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HL-B-%E8%AF%AD%E6%96%87"><span class="toc-number">5.3.</span> <span class="toc-text">HL B 语文</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SL-%E7%BB%8F%E6%B5%8E"><span class="toc-number">5.4.</span> <span class="toc-text">SL 经济</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SL-%E6%88%8F%E5%89%A7"><span class="toc-number">5.5.</span> <span class="toc-text">SL 戏剧</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SL-%E8%8B%B1%E8%AF%AD"><span class="toc-number">5.6.</span> <span class="toc-text">SL 英语</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#11%E5%B9%B4%E7%BA%A7%E8%AF%BE%E5%A4%96"><span class="toc-number">6.</span> <span class="toc-text">11年级课外</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%96%E7%A8%8B"><span class="toc-number">6.1.</span> <span class="toc-text">编程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%93%E8%82%B2"><span class="toc-number">6.2.</span> <span class="toc-text">体育</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%8F%E5%89%A7-1"><span class="toc-number">6.3.</span> <span class="toc-text">戏剧</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%AA%E4%BA%BA"><span class="toc-number">7.</span> <span class="toc-text">个人</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%90%8E%E8%AF%AD"><span class="toc-number">8.</span> <span class="toc-text">后语</span></a></li></ol>
+            <div class="blur-top"></div>
+            <div class="blur-bottom"></div>
+        </div>
+    </div>
+
+
+    <div class="content" v-pre id="main-content">
+        <link rel="stylesheet" type="text&#x2F;css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"><p><img src="/posts/20240615-2024-y10-11-reflection/main.jpg" alt="Header Image" title="Existence">
+<em>Existence</em></p>
+<p><em>P站：<a target="_blank" rel="noopener" href="https://www.pixiv.net/en/artworks/81617931">https://www.pixiv.net/en/artworks/81617931</a></em></p>
+<hr>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><em>注：我写完了这篇文后发现结构与内容都极其混乱，做好准备…</em></p>
+<p>大家好，好久不见。十年级的年终总结在暑假写到一半就断了。现在趁着圣诞假期，我来把10年级的总结补全，顺便聊聊过了一半的11年级。</p>
+<p>先将之前写了的内容贴在下面吧：</p>
+<hr>
+<h1 id="前言（10年级）"><a href="#前言（10年级）" class="headerlink" title="前言（10年级）"></a>前言（10年级）</h1><p>大家好，一年一度的学年终总结来了。和上次一样，我也是在机场等飞机时码的这篇文。实话实说，今年写这个总结的动力远不如去年，因为我还有一篇根本没动笔的论文要交。虽然但是，这一总结对我来说还是挺有意义的，值得被续写（我现在不写以后肯定也不会写）。</p>
+<p>今年是我留学的第二年，10年级，也是进入所谓高压高强度的DP前最后一年。没有具体想说的，就想到哪写到哪吧。结构就参考去年的流程，先从学校说起。</p>
+<h1 id="学校（10年级）"><a href="#学校（10年级）" class="headerlink" title="学校（10年级）"></a>学校（10年级）</h1><p><em>作为一名留学生，其实过去的学年里99%的时间都是在学校里度过的。仔细想想还挺幽默，自己过往的一年里大多数时候都生活在一个几百米乘几百米的区间内。</em></p>
+<h2 id="宿舍（10年级）"><a href="#宿舍（10年级）" class="headerlink" title="宿舍（10年级）"></a>宿舍（10年级）</h2><p>回顾校内生活，相比于去年应该是更好了吧。自己个人更习惯（不管是好是坏）寄宿的模式，认识的人也多了不少。去年我的年级一共只有6个寄宿生，我和4个混的都不是很熟，跟高年级打的交道多一些。今年新来了4个十年级，都和中国有点关系（混血，华人，刚出国等），能与我沟通的人也就多了。这里我不得不特别的提一下我今年的室友，是个新来的中西混血。虽不能说他一点问题没有，但和他交流的确实比去年年中才到校的室友舒服一些，我也靠着他和一些其他的人混熟了许多。</p>
+<p>既然都提到了宿舍里的人，那就不得不说一嘴传奇人物钻石（Diamond）了。他是今年的新生之一，刚从国内出来。他在留学这方面可以说是乳臭未干…物理意义上也是。</p>
+<p>简单点来说，钻石哥（钻哥）依靠着他强大且永久的“气息”，极度抽象的情商，和对学业不屑一顾的态度在我们宿舍，乃至整个学校一炮而红。他有许多著名的事迹，例如“5年见6次”，“期末考睡过头”，“顶级网瘾”等。学校的人选永远不会让我失望。</p>
+<p>总的来说今年宿舍内的体验确实是更好了吧。</p>
+<h2 id="教学（10年级）"><a href="#教学（10年级）" class="headerlink" title="教学（10年级）"></a>教学（10年级）</h2><p>10年级的课程体验完整感受下来和我去年预言的一样。难度肯定是客观上更高了，不过实话实说，主观上感觉差不多。个人认为难度最大的是仅今年有的Civics，对标去年的加拿大历史。其他的课真感觉没什么区别，除了英语有点变化。10年级英语今年第一次变成国家规定的NBE3U，简单点来说整年的英语教材都是专注于土著（Indigenous）文学的。比较新的一个课程，就论难度的话比去年强度高挺多的。</p>
+<p>我忘了去年是否提到这件事，不过现在是非常的明显了。学生在大多数课的表现很吃“抽”到的老师。老师的影响大到什么地步？拿今年的科学举例子，一共似乎是3个科学老师，完全可以把他们排成一个梯度。不客气的说，一个能在T0老师那里拿高6的试卷很有可能在T2的老师那里拿中5。这是一个非常非常非常大的变化，因为虽然说评分最高是8，对于一名追求成绩的学生来说最低满意的分数为6。8极其难拿且非常看脸（11，12年级的DP根本没有8了），所以大多数人（比如我自己）会专注于保6争7。那一个“好”和“不好”的老师会决定你到底是需要保6争7还是保7争8来获取大于等于6的分数。两者区别极大，6分还是有可观的容错，而7大多数的时候只能有一点点或者无失误。8在保证你没有任何瑕疵的情况下还要求一些创新，非常吃运气（有些老师根本不给8）。对此作为一名学生也很无奈，我最多能做的也只是和老师多沟通熟悉一下他们的套路。</p>
+<p>今年我“抽”的老师其实还不错，也没有什么好抱怨的。不过不是所有人都这么走运了。</p>
+<p>话说今年的体育课也值得说一说，今年是体育课的最后一年，而从来没有一节课让我如此哭笑不得。每节课一共ABCD四个评分项，最后综合起来给一个课程分。体育课也有一些项目（例如演讲，写作等…欢迎来到IB），而在课内的体育表现是归于C评分项的。这个C评分项，我一整年下来全部拿5。每个新的体育项目，从篮球到羽毛球，排球到橄榄球，全部，无一例外，拿的5。其实也算是意料之中，但就挺让我难评的。主要是我感觉我没什么办法，可能这就是很多学生在其他科目有的感受吧。</p>
+<p>虽然成绩单还没出，但我对我今年的校内发挥还是比较满意的。有一些好学生今年因为各种原因似乎发挥的不是很好（或者就是在卖弱）。</p>
+<p><em>11年级注：他们就是在卖弱</em></p>
+<p>明年的DP选课也在年中就处理好了，走的是HL多理科SL多文科的路线。压力最大的应该是HL AA Math和HL Physics这两门理科，SL Eng可能也会有一点点难度。不算是太困难的课程组吧。</p>
+<hr>
+<p>半年前暑假开始就写到这里。现在经历了半年IB DP的折磨，让我完善一下10年级校内的学习状况，并且讲讲所谓真正的IB到底体验如何。</p>
+<h1 id="10年级学业"><a href="#10年级学业" class="headerlink" title="10年级学业"></a>10年级学业</h1><p>现在我已经拿到了十年级的成绩单，并且颁奖仪式也都去过了。我们学校每年都会有一个颁奖仪式，给那些在特定科目内表现优秀和整体学业上表现良好的同学颁奖。我9年级拿到了年级前10%的奖，10年级却没有，这可算是某种程度上的“退步”？其实我个人不这么觉得，我成绩单上可以说是所有我希望不拿5的科目都拿了6，但所有不稳定拿7的科目也都拿了6。整体上分数和9年级的完全一致。虽然7拿的比我所希望的少了，但运气也占挺大一部分的吧，感觉很多科目离7就差一口气。</p>
+<h2 id="戏剧"><a href="#戏剧" class="headerlink" title="戏剧"></a>戏剧</h2><p>颁奖仪式最令我所“惊讶”的是我拿到了戏剧课的单项奖。9，10年级我都上了戏剧课，但这主要是为了混一个分数。11年级以下是强制要求在视觉艺术，音乐，和戏剧中选一门的。我选戏剧是因为他在这三门课中门槛最低，最容易轻松地拿下一个高分。我在此之前没有任何的表演基础，在9年级的戏剧课里表现的也是平平无奇。</p>
+<p>10年级换了一个戏剧老师，恰巧也是我们宿舍的主宿管之一。她从第一个表演项目中就认为我在表演这一方面“有天赋”。对于她的鼓舞，我至今还保留着一定的疑惑，毕竟我还没确确实实的看到过自己的天赋。对于戏剧这方面我在11年级的篇幅中会讲到更多。言而总之，10年级也确实是靠着她拿到了戏剧的奖项，虽然我本人对此也不知道是该高兴还是疑惑…</p>
+<h1 id="11年级学业"><a href="#11年级学业" class="headerlink" title="11年级学业"></a>11年级学业</h1><p>10年级所发生的事也已经是过去式了，来看看真正的IB吧。我在十年级预测的大差不差，最难的的确是HL AA数学和HL 物理。英语也的确给我上了一些难度。一共也就6门主课，那就一门门谈吧。</p>
+<p><em>还有一门“主课”是TOK。我不想在这里对TOK发表过于激进的意见，因为上了半年这门课，我对他的理解无异于我对量子力学的理解——都没有任何理解。为了方便，我们就先无视这门课吧。</em></p>
+<h2 id="HL-数学"><a href="#HL-数学" class="headerlink" title="HL 数学"></a>HL 数学</h2><p>对于HL AA数学的“谣言”我可算是太熟悉了。许多人都把这门课封IB中最困难的一门课，据说大多学生在开课一个月内就会调课换走，而在选择留下的学生中仅仅是拿个5都算谢天谢地。</p>
+<p>那事实到底如何呢？我个人体验了半年HL AA后感觉对于所有课（包括这门数学）的难度都还是：<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%B0%8F%E9%A9%AC%E8%BF%87%E6%B2%B3/19526305">小马过河</a>。简单点说就是难度因人而异，很难给一门课打上绝对的难度标签。不过这门课对我来说确实是算难的。这一学期一共有两个考试，第一个考试是对十年级所有内容的一次综合考研，第二个是对新的统计，概率内容进行的考试。</p>
+<h3 id="第一考"><a href="#第一考" class="headerlink" title="第一考"></a>第一考</h3><p>第一考简直是地狱。在开学两个月不到的情况下，我们就对10年级所有的内容进行了复习和衍生。这第一考可以说是我最为绝望的一次数学考试。我可以感觉到我的计算和解题能力都不过关，考试前一天的复习也能感受到几乎没有任何意义。</p>
+<p>考试的结果也不出乎意料，完全解出来的题目只有一两道。好在大家考的都不尽人意，所以这一考的分数依靠curve稳定在了一个5。在考完了第一个考试后，我果断寻找了课外的资源来辅助自己，因为我知道这将会是一场持久战。</p>
+<h3 id="第二考"><a href="#第二考" class="headerlink" title="第二考"></a>第二考</h3><p>第二考相比于第一考好太多了，可谓是天堂地狱。这一考的内容本身就比较简单，再加上我有了课外资源的加持，我也是考上了一个6。6其实比我所预期的分数还低了点，原因应该是这一考本身就很简单，所以curve将我的分数拉低了。不过6对于HL AA来说我已经很满意了，只希望接下来的微积分也可以至少拿个6。</p>
+<h2 id="HL-物理"><a href="#HL-物理" class="headerlink" title="HL 物理"></a>HL 物理</h2><p>物理的难度出奇的高。我选择物理的原因也不复杂，主要是因为想选一门科学，而自己的化学又太烂。物理每个概念都不算太难理解，但概念迭代的实在是太快了。公式和单位简直是指数级增加。我们的物理老师也是有意思，很符合“书呆子”的刻板印象。不过他确实是个负责任的老师，可能有时太负责了…</p>
+<h3 id="第一考-1"><a href="#第一考-1" class="headerlink" title="第一考"></a>第一考</h3><p>物理到现在为止只有一考，而这一考被我完美的拿下了，7+。我知道这加上我前面说的话有点凡尔赛，但听我解释。物理第一考已经是一整子之前的事了，开课一个月出头就考了，和数学差不多。这时概念还不多，大多我的直觉都能理解（什么速度，加速度等）。我本身10年级物理就不错，老师所给的作业也都全部完成了，这一考自然比较轻松。</p>
+<p>但对于即将到来的，假期之后的第二考就不一样了。我对这第二考没什么信心。第一考和第二考之间所出现的新内容对我来说都是崭新的，而对于每一个概念我们大多都只停留一节课，还没捂热就要再学新的了。物理里的概念也像积木一样，每个概念都多多少少地会依赖于一些其他的概念。积木越搭越高，但凡任何一个概念有些松动，那后果都是不堪设想的。不过我们的老师一直强调作业的完成度，到此为止所有的功课我都做了，理论上问题应该不大。在假期内我准备把内容再好好地过一下，希望第二考不要翻车。</p>
+<h2 id="HL-B-语文"><a href="#HL-B-语文" class="headerlink" title="HL B 语文"></a>HL B 语文</h2><p>语文课实在没什么好说的，我跟老师都是老熟人了，这一学期听说读写四个考试也都顺利的拿下了7。语文课在某种程度上也算是我的“避难所”了。</p>
+<p>虽然课内表现良好，但我还是不得不感叹自己的中文水平是在以一个可以察觉到的速度下滑。果然刀不磨就会生锈，语言不练就会退步。</p>
+<h2 id="SL-经济"><a href="#SL-经济" class="headerlink" title="SL 经济"></a>SL 经济</h2><p>好，HL课说完了，现在来看看SL。</p>
+<p>我选择经济主要是因为很多高年级的都告诉我经济非常“简单”，很容易就可以拿下高分。我对经济也没什么概念，选择它也就是为了占一门SL的位置。</p>
+<p>经济课SL选的人太少，SL和HL都是同一个班，不过考试略有不同。我也算是半个HL经济了。第一个考试拿了7，第二个考试的结果还没有出来。我感觉没有像高年级所说的如此简单，但的确也没有太难。我的经济老师也非常不错，听说另一个经济老师就很恶劣了。那这一分班也算是走运。</p>
+<p>对于这节课我也很难进行一个评价，整体来说无感吧，仅仅是上的一门课而已。</p>
+<h2 id="SL-戏剧"><a href="#SL-戏剧" class="headerlink" title="SL 戏剧"></a>SL 戏剧</h2><p>戏剧课。很有意思的一门课。老师和10年级的老师一样，也是老熟人了，今年还是我们的宿管。这里就讲课内的情况，戏剧课外的情况接下来单独开一个分区讲。单对于这门课来说我的表现优异，拿7并没有什么问题，也已经进行了三个表演了。</p>
+<p>本来为了大学申请并没有准备上这门课，但出于某种我已经记不清的机缘巧合最终还是上了。这门课和经济一样也是SL HL混合，并且在评分上都没有区别。我可以算是一个完整的HL戏剧了。唯一的区别是HL戏剧在12年级会有一个额外的独白单元，而SL在那时候就解放了。</p>
+<p>我们的老师对于我上戏剧这件事很是高兴，因为她依旧觉得我很有天赋，但我一如既往的还不是很明白她到底是从哪里看出来的。</p>
+<h2 id="SL-英语"><a href="#SL-英语" class="headerlink" title="SL 英语"></a>SL 英语</h2><p>如果忽视TOK这门我完全无法理解的课程的话，最后一门主课了。英语也是一个坎，毕竟是一门非常主观而且吃老师评分习惯的课。我不认为我的英语很差，但我上的英语确实是最低等级的了，而唯一一次的测验还是拿了5+。</p>
+<p>我认为这和我们英语老师的评分习惯有着很大的关系（他在课上屡次提到他认为我们学校的分数过于膨胀），不过不管如何这也只是两年里的第一个分数，不能说明什么。我们英语老师也是个很有意思的人，第一眼就会给人一种典型“中年文学知识分子”的感觉。他除了教英语还跟戏剧有点关系，回头会讲到。现在我只能希望在第二个英语项目上他的评分会慷慨一些。</p>
+<p><img src="/posts/20240615-2024-y10-11-reflection/wish.jpg" alt="Middle Image" title="Wishful Evening">
+<em>Wishful Evening</em></p>
+<p><em>P站：<a target="_blank" rel="noopener" href="https://www.pixiv.net/artworks/69521060">https://www.pixiv.net/artworks/69521060</a></em></p>
+<h1 id="11年级课外"><a href="#11年级课外" class="headerlink" title="11年级课外"></a>11年级课外</h1><p>仔细一想，我去年课外的活动就不多，现在进了DP那是越来越少了。</p>
+<h2 id="编程"><a href="#编程" class="headerlink" title="编程"></a>编程</h2><p>要我讲自己的课外活动，那就不可能绕开写代码这个话题。从小学开始，编程就是我最引以为傲的一项技能。不过我大多时间都花在编程竞赛（OI）上，最开始学编程也是为了竞赛。打竞赛我一路坚持到了10年级，但是现在到了11年级，我也算是完全放弃了。或者换圈内OIer的话语，我也算是“退役”了（讲道理我根本不能算退役，本身就没什么职业可言）。</p>
+<p>放弃竞赛固然是一个过程，而不是一瞬间的冲动行为。我还能清晰记起我初中时幻想自己越来越强，能到高中后在各类比赛中斩下一个好的名次，甚至最后可能有幸参加国家集训队等。这样的梦当然不是一晚上就破灭了的。高中学业越来越繁忙是一回事，但更主要的还是我自己在竞赛能力方面的欠缺。我从小学就开始学编程，一直主攻竞赛，到了高中还没有什么很耀眼的成绩，甚至比很多才接触OI几年的选手还差。虽然我可以给自己找一些借口，例如小学时期的教学资源实在是劣质，或者我在早期学习的只是基础语法，但我其实心里很清楚，学了这么久还是如此，最关键的原因还是我不行。我不知道我在OI这方面到底有没有天赋，我觉得没有，但这到头来也不重要，因为就算我有天赋，我的努力也不足以支撑起这份天赋。</p>
+<p>能说的细节还有很多，但大致的原因确实就是如此。</p>
+<p>对于放弃竞赛我还是很难受的，毕竟是自己坚持了最久的一项课外活动。OI早已成为了我人格的一部分，每当别人问我课外做些什么的时候，我总会说“编程竞赛”。现在因为自己的原因主动放弃，夸张地说，就像是失去了自己的一部分。不过我也看得比较开，我早就意识到编程不仅仅是竞赛，竞赛只是很小的一部分。现在对于我来说更为有趣的还是依靠代码进行创作，无论是以网站，软件还是其他方式，学会编程所能给予一个人的创造力是无限的。</p>
+<p>所以这就是现在我和编程的关系，敲代码主要是为了构建项目，而不是解决竞赛问题。我也不后悔花了自己这么长一段时间来打在结果方面对自己影响微乎其微的竞赛，毕竟是他带我入了编程的门。</p>
+<p>对于编程我其实还能说上很多，但现在就这样仓促的收尾吧。</p>
+<h2 id="体育"><a href="#体育" class="headerlink" title="体育"></a>体育</h2><p>我本身就和体育不怎么沾边，从小接触的运动就不多。自从进了初中不再踢球后，我就再也没有跟着一个运动很久了。初中末尾打了一段时间壁球，9 10年级也参加了学校壁球队，但11年级就没有继续了。主要是11年级往后的Varsity校队强度过高，我一年训练一个季度的技术不够格（不过我也没有去试训，可能是够的）。</p>
+<p>下次再打壁球也不知道会是什么时候了。和编程竞赛类似，我也算是放弃了壁球吧。</p>
+<h2 id="戏剧-1"><a href="#戏剧-1" class="headerlink" title="戏剧"></a>戏剧</h2><p>体育和编程方面都挺负面的，讲的都是放弃。这一段相对来说会正面很多。</p>
+<p>由于我的戏剧老师一直在强调本文中也提到多次的“表演天赋”，我被强烈建议参加至少一次校内的戏剧演出。这里的演出指的是脱离戏剧课本身，面向全校的表演。我对戏剧本身也不反感，便在10年级就同意了，并表示自己会在11年级尝试参加一个演出。</p>
+<p>现在11年级一半过去了，我也是成功在试镜中拿到了最近一次演出的三个主角之一。虽然我的戏剧老师一直在“吹”我，但这个结果对于我来说还是有点惊讶的。这次试镜竞争性是很强的，前前后后大概有50来人争夺剧组里的20个位置，贯穿全剧的也只有三个人物。这也是我第一次在戏剧课之外展示自己的表演能力，并且收到我戏剧老师之外其他人的认可。这对我鼓舞很大，但我还是很难对我自己的表演能力感到非常自信。事实上，我的压力很大。这是我参加的第一个大型戏剧表演，而其他两名主角都有着丰富的先前表演经验，我很怕自己无法达到众人的预期。再加上参加这样的一个演出意味着需要几乎每天都要去排练，需要我极大的时间付出。我只能希望我真的和我戏剧老师所说的一样有天赋了。</p>
+<p>哦对了，我之前提到过我的英语老师和戏剧还有着一定联系。我所参加的这个表演就是他基于莎士比亚的世界观所写的剧本。我表现好的话英语应该也更容易拿高分 :)。</p>
+<h1 id="个人"><a href="#个人" class="headerlink" title="个人"></a>个人</h1><p>这篇文主要是在机场里写的，最后再在国内进行了收尾和润色。重读这一段上面的所有内容，我个人感觉其实没有什么实际上有意义的内涵。相比于总结或反思，更像是一长段没头没尾的概述，是那种就算删掉也不会有任何实际影响的“废话”。</p>
+<p>不过我最后应该还是会发出来，毕竟写这么多字还是花了好一些时间的。</p>
+<p>我有这种“写了这么多都没意义”的感觉应该是因为我到此为止都没怎么讲过我自己到底怎么想，更多只是复述发生了些什么，我做了些什么，中间没有任何的思考过程。不过我认为事实就是如此，在过去的一年半，我似乎真的是少了很多的思考。</p>
+<p>我记得在9年级的年终总结里我表达了自己的迷茫——对于未来的迷茫，对于现在的迷茫。我当时不知道自己做许多事到底是为了什么，也在许多事上无法定下一个绝对的目标。现在我应该没有当时那么迷茫了，但我也说不清具体是为什么。</p>
+<p>我想可能是因为我想的少了吧，对于很多事不再去进行额外的质疑，只是顺着水去把手头上有的事完成。</p>
+<p>至于一些事情的意义和我的目标，我现在应该可以给出比之前好一些的答案，但对于这些深刻的问题，真的有直接回答的必要吗？</p>
+<p>这可能就是成长给人带来的变化，但我不清楚这样的成长对我来说是否真的是有益的。我可能变成熟了，但成熟并不完全褒义，且成熟也有自己的代价。</p>
+<p>一年前的我可能比现在的我迷茫，但我现在也没显的有多清醒。对于大多事我还很是困惑，我还是有很长的路要走。</p>
+<p>非要我说出现在的某种目标，那我想接下来这段话是最好的概括：我渴望某种表达。</p>
+<p>听上去莫名文艺，甚至有些中二。我很难对其做出解释，也不知道这到底是不是真的“我心所向”。但就现在为止，最能概括我内心活动的就是这句话了。</p>
+<p>有可能我刚花了这么多文字去描述的事情在我真正的人生里占比很低。我事实上可能对学业没那么上心，只是为了能继续向前走罢了。</p>
+<p>这一段写完反而比之前所有段落都无头无尾。</p>
+<p><img src="/posts/20240615-2024-y10-11-reflection/end.jpg" alt="Final Image" title="コスモスの空">
+<em>コスモスの空</em></p>
+<p><em>P站：<a target="_blank" rel="noopener" href="https://www.pixiv.net/artworks/85263957">https://www.pixiv.net/artworks/85263957</a></em></p>
+<h1 id="后语"><a href="#后语" class="headerlink" title="后语"></a>后语</h1><p>呃……到此为止这篇文的正文部分就结束了。我其实非常纠结要不要发这篇文，因为我写出来的东西在各种方面都让我不是很满意。我感觉既没写出什么实际的内容，也没什么深奥的思想。我只能说，在某种程度上，这篇文是我这一年半期间的一个快照？一个非常无聊，片面，冗长的快照。</p>
+<p>为了填补10年级缺失的年度总结，这篇还是发了吧。11年级末还会再写一篇，那时的思绪应该会整洁很多。</p>
+<p>唉，写博客还是很累的。发完我就继续去享受圣诞假期喽。</p>
+
+    </div>
+    
+    
+    
+    
+    
+    <div id="comment">
+        <div id="waline-container"></div>
+    </div>
+    
+    
+    
+</div>
+
+            <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2023 - 2024 Patrickの小窝
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;Patrick-orz
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+        
+        <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
+            </div>
+        </transition>
+        
+    </div>
+    <script src="/js/main.js"></script>
+    
+    
+
+
+<script>
+    Waline.init({
+        el: "#waline-container",
+        serverURL: "https://waline-patrick-orz.vercel.app/",
+        commentCount: true,
+        pageview: true,
+        emoji: "https://unpkg.com/@waline/emojis@1.2.0/weibo,https://unpkg.com/@waline/emojis@1.2.0/alus,https://unpkg.com/@waline/emojis@1.2.0/bilibili,https://unpkg.com/@waline/emojis@1.2.0/qq,https://unpkg.com/@waline/emojis@1.2.0/tieba,https://unpkg.com/@waline/emojis@1.2.0/tw-emoji".split(","),
+        meta: "nick,mail,link".split(","),
+        requiredMeta: "nick".split(","),
+        lang: "",
+        wordLimit: 0,
+        pageSize: "10",
+        login: "enable",
+        
+        locale: {"nick":"昵称","nickError":"昵称不能少于3个字符","mail":"邮箱","mailError":"请填写正确的邮件地址","link":"网址","optional":"可选","placeholder":"欢迎评论","sofa":"来发评论吧~","submit":"提交","like":"喜欢","cancelLike":"取消喜欢","reply":"回复","cancelReply":"取消回复","comment":"评论","refresh":"刷新","more":"加载更多...","preview":"预览","emoji":"表情","uploadImage":"上传图片","seconds":"秒前","minutes":"分钟前","hours":"小时前","days":"天前","now":"刚刚","uploading":"正在上传","login":"登录","logout":"退出","admin":"博主","sticky":"置顶","word":"字","wordHint":"评论字数应在 $0 到 $1 字之间！\\n当前字数：$2","anonymous":"匿名","level0":"潜水","level1":"冒泡","level2":"吐槽","level3":"活跃","level4":"话痨","level5":"传说","gif":"表情包","gifSearchPlaceholder":"搜索表情包","profile":"个人资料","approved":"通过","waiting":"待审核","spam":"垃圾","unsticky":"取消置顶","oldest":"按倒序","latest":"按正序","hottest":"按热度","reactionTitle":"你认为这篇文章怎么样？"},
+        
+    });
+</script>
+
+
+
+    
+</body>
+</html>

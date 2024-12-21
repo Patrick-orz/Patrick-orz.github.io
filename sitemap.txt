@@ -1,3 +1,4 @@
+https://patrick-orz.github.io/posts/20240615-2024-y10-11-reflection.html
 https://patrick-orz.github.io/posts/20240524-major-blog-update.html
 https://patrick-orz.github.io/links/index.html
 https://patrick-orz.github.io/tags/index.html
@@ -17,6 +18,7 @@ https://patrick-orz.github.io/tags/%E7%AB%9E%E8%B5%9B/
 https://patrick-orz.github.io/tags/USACO/
 https://patrick-orz.github.io/tags/%E9%9A%8F%E7%AC%94/
 https://patrick-orz.github.io/tags/2023%E6%9A%91%E5%81%87/
+https://patrick-orz.github.io/tags/2024%E6%9A%91%E5%81%87/
 https://patrick-orz.github.io/tags/%E6%B8%B8%E6%88%8F/
 https://patrick-orz.github.io/tags/%E8%94%9A%E8%93%9D/
 https://patrick-orz.github.io/tags/%E5%8D%9A%E5%AE%A2/
