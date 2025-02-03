@@ -893,7 +893,8 @@ iframe {
     border-radius: 10px;
 }
 mark {
-    background: #fff13360;
+    /*background: #fff13360;*/
+	background: white;
     border-radius: 4px;
     color: unset;
     line-height: 2.5;
@@ -1112,4 +1113,36 @@ ol li {
     ol {
         padding-left: 20px;
     }
+}
+
+/*Some custom colors (mainly for achievements page)*/
+.clear-text {
+	color: rgba(144, 238, 144, 1);
+}
+.clear-bg {
+	background-color: rgba(144, 238, 144, 1);
+}
+.full-clear-text {
+	color: rgba(44, 137, 11, 1);
+}
+.full-clear-bg {
+	background-color: rgba(44, 137, 11, 1);
+}
+.golden-text {
+	color: rgba(255, 215, 0, 1);
+}
+.golden-bg {
+	background-color: rgba(255, 215, 0, 1);
+}
+.in-progress-text {
+	color: rgba(100, 181, 255, 1);
+}
+.in-progress-bg {
+	background-color: rgba(100, 181, 255, 1);
+}
+.planned-text {
+	color: rgba(220, 220, 220, 1);
+}
+.planned-bg {
+	background-color: rgba(220, 220, 220, 1);
 }
