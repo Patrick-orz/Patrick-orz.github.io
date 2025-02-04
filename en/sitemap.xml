@@ -20,15 +20,6 @@
   </url>
   
   <url>
-    <loc>https://patrick-orz.github.io/en/archives/index.html</loc>
-    
-    <lastmod>2024-11-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://patrick-orz.github.io/en/about/index.html</loc>
     
     <lastmod>2024-11-28</lastmod>
@@ -48,6 +39,15 @@
   
   <url>
     <loc>https://patrick-orz.github.io/en/links/index.html</loc>
+    
+    <lastmod>2024-11-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://patrick-orz.github.io/en/archives/index.html</loc>
     
     <lastmod>2024-11-28</lastmod>
     
@@ -99,14 +99,14 @@
   </url>
   
   <url>
-    <loc>https://patrick-orz.github.io/en/tags/Meme/</loc>
+    <loc>https://patrick-orz.github.io/en/tags/Blog/</loc>
     <lastmod>2025-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://patrick-orz.github.io/en/tags/Blog/</loc>
+    <loc>https://patrick-orz.github.io/en/tags/Meme/</loc>
     <lastmod>2025-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -122,14 +122,14 @@
   </url>
   
   <url>
-    <loc>https://patrick-orz.github.io/en/categories/Quotes/</loc>
+    <loc>https://patrick-orz.github.io/en/categories/Announcements/</loc>
     <lastmod>2025-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://patrick-orz.github.io/en/categories/Announcements/</loc>
+    <loc>https://patrick-orz.github.io/en/categories/Quotes/</loc>
     <lastmod>2025-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
