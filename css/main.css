@@ -1122,32 +1122,63 @@ ol li {
 
 /*Some custom colors (mainly for achievements page)*/
 .clear-text {
-	color: rgba(144, 238, 144, 1);
+	/*color: rgba(144, 238, 144, 1);*/
+	color: rgb(211, 238, 152)
 }
 .clear-bg {
-	background-color: rgba(144, 238, 144, 0.8);
+	/*background-color: rgba(144, 238, 144, 0.8);*/
+	background-color: rgb(211, 238, 152);
 }
 .full-clear-text {
-	color: rgba(44, 137, 11, 1);
+	/*color: rgba(44, 137, 11, 1);*/
+	color: rgb(160, 214, 131);
 }
 .full-clear-bg {
-	background-color: rgba(44, 137, 11, 0.6);
+	/*background-color: rgba(44, 137, 11, 0.6);*/
+	background-color: rgb(160, 214, 131);
 }
 .golden-text {
-	color: rgba(255, 215, 0, 1);
+	/*color: rgba(255, 215, 0, 1);*/
+	color: rgb(255, 217, 102);
 }
 .golden-bg {
-	background-color: rgba(255, 215, 0, 0.6);
+	/*background-color: rgba(255, 215, 0, 0.6);*/
+	background-color: rgb(255, 217, 102);
 }
 .in-progress-text {
-	color: rgba(100, 181, 255, 1);
+	/*color: rgba(100, 181, 255, 1);*/
+	/*color: rgb(244, 215, 147);*/
+	/*color: rgb(255, 180, 162);*/
+	color: rgb(161, 227, 249);
 }
 .in-progress-bg {
-	background-color: rgba(100, 181, 255, 0.6);
+	/*background-color: rgba(100, 181, 255, 0.6);*/
+	/*background-color: rgb(244, 215, 147);*/
+	/*background-color: rgb(255, 180, 162);*/
+	/*background-color: rgb(240, 168, 208);*/
+	/*background-color: rgb(87, 143, 202);*/
+	background-color: rgb(161, 227, 249);
 }
 .planned-text {
-	color: rgba(220, 220, 220, 1);
+	/*color: rgba(220, 220, 220, 1);*/
+	/*color: rgb(254, 250, 224);*/
+	/*color: rgb(229, 225, 218);*/
+	/*color: rgb(250, 237, 206);*/
+	/*color: rgb(255, 205, 178);*/
+	color: rgb(203, 220, 235);
 }
 .planned-bg {
-	background-color: rgba(220, 220, 220, 0.6);
+	/*background-color: rgba(220, 220, 220, 0.6);*/
+	/*background-color: rgb(254, 250, 224);*/
+	/*background-color: rgb(229, 225, 218);*/
+	/*background-color: rgb(250, 237, 206);*/
+	/*background-color: rgba(255, 205, 178, 0.5);*/
+	/*background-color: rgb(255, 198, 198);*/
+	/*background-color: rgb(209, 248, 239);*/
+	/*background-color: rgb(161, 227, 249);*/
+	background-color: rgb(203, 220, 235);
 }
+
+/* None: https://colorhunt.co/palette/ccd5aee0e5b6faedcefefae0 */
+/* Green: https://colorhunt.co/palette/72bf78a0d683d3ee98feff9f */
+/* Gold: https://colorhunt.co/palette/fff2ccffd966f4b183dfa67b */
