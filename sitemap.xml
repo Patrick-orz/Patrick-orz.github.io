@@ -171,6 +171,13 @@
   </url>
   
   <url>
+    <loc>https://patrick-orz.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2025-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://patrick-orz.github.io/tags/OI/</loc>
     <lastmod>2025-02-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -186,13 +193,6 @@
   
   <url>
     <loc>https://patrick-orz.github.io/tags/USACO/</loc>
-    <lastmod>2025-02-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://patrick-orz.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2025-02-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
