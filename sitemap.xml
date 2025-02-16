@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://patrick-orz.github.io/posts/20250216-celeste-modded.html</loc>
+    
+    <lastmod>2025-02-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://patrick-orz.github.io/posts/20250124-hk-r5.html</loc>
     
     <lastmod>2025-02-14</lastmod>
@@ -199,13 +208,6 @@
   </url>
   
   <url>
-    <loc>https://patrick-orz.github.io/tags/2024%E6%9A%91%E5%81%87/</loc>
-    <lastmod>2025-02-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://patrick-orz.github.io/tags/%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2025-02-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -220,13 +222,6 @@
   </url>
   
   <url>
-    <loc>https://patrick-orz.github.io/tags/%E5%89%A7%E6%83%85%E7%B1%BB/</loc>
-    <lastmod>2025-02-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://patrick-orz.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2025-02-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -234,7 +229,21 @@
   </url>
   
   <url>
+    <loc>https://patrick-orz.github.io/tags/2024%E6%9A%91%E5%81%87/</loc>
+    <lastmod>2025-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://patrick-orz.github.io/tags/%E7%A9%BA%E6%B4%9E%E9%AA%91%E5%A3%AB/</loc>
+    <lastmod>2025-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://patrick-orz.github.io/tags/%E5%89%A7%E6%83%85%E7%B1%BB/</loc>
     <lastmod>2025-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
